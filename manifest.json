@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Return Crunchyroll Random",
+	"description": "Brings back the Random button on Crunchyroll, allowing you to watch a random anime from their catalog.",
+	"author": "edgHD",
+	"version": "1.0",
+	"host_permissions": ["*://*.crunchyroll.com/*"],
+	"content_scripts": [
+		{
+			"matches": ["*://*.crunchyroll.com/*"],
+			"js": ["content/script.js"]
+		}
+	],
+	"icons": {
+		"16": "content/assets/icon16.png",
+		"48": "content/assets/icon48.png",
+		"128": "content/assets/icon128.png"
+	},
+	"action": {
+		"default_popup": "content/popup.html",
+		"default_icon": "content/assets/icon48.png"
+	}
+}
